@@ -1,0 +1,6 @@
+    _id,address,price,type
+1,Winterfell,120000,Castle
+2,King's Landing,800000,Palace
+3,The Eyrie,200000,Fort
+4,Highgarden,350000,Mansion
+5,Dragonstone,500000,Island

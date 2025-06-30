@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recherche Pokémon</title>
+</head>
+<body>
+    <h1>Recherche de Pokémon</h1>
+    <form method="POST">
+        <label>Nom :</label>
+        <input type="text" name="name">
+        <label>Type :</label>
+        <input type="text" name="type">
+        <button type="submit">Chercher</button>
+    </form>
+
+    <h2>Résultats :</h2>
+    <ul>
+        {% for pokemon in results %}
+            <li>{{ pokemon['Name'] }} ({{ pokemon['Type 1'] }}{% if pokemon['Type 2'] %} / {{ pokemon['Type 2'] }}{% endif %})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
